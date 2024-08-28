@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onfocus</title>
+</head>
+    <script>
+        function acao1(x){
+            x.style.background = 'yellow'
+        }
+
+        function acao2(x){
+            x.style.background = 'white'
+        }
+
+    </script>
+<body>
+   <input onfocus="acao1(this)" onblur="acao2(this)" type="text">
+   <input onfocus="acao1(this)" onblur="acao2(this)" type="text">
+</body>
+</html>

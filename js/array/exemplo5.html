@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /*
+      Objeivo: F.U.P Informar 10 nomes de pessoas, colocar em um array, posteriormente mostrar esses nomes.
+    */
+    nomes = new Array (10);
+    nome = " ";
+    for(x = 0; x< 10;x++){
+        nome = prompt("Digite o " + (x + 1) + "º nome")
+        nomes[x] = nome;
+    }
+
+    document.write('<h1>Listagem de nomes</h1>');
+    for(x=0; x < 10; x++){
+        document.write(nomes[x],'<br>');
+    }
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let resposta = 's';
+    let qtIdosos = 0;
+    while(resposta != "n"){
+
+        let nome  = prompt('Digite o seu nome');
+        let idade = prompt('Digite a idade');
+        if(idade >= 60){
+            qtIdosos ++;
+        }
+        resposta = prompt('Deseja continuar ? (S/N)');
+    }
+    document.write('A qt de pessoas idosas é ' + qtIdosos)
+</script>
+
+
+
+<body>
+    
+</body>
+</html>

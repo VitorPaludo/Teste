@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de onsubmit</title>
+    <script>
+        // Função a ser chamada quando o formulário é enviado
+        function validarFormulario(event) {
+            // Obtém o formulário
+            const formulario = event.target;
+
+            // Obtém os campos de entrada
+            const nome = formulario.nome.value.trim();
+            const email = formulario.email.value.trim();
+
+            // Verifica se os campos estão vazios
+            if (nome === '' || email === '') {
+                // Exibe uma mensagem de erro e impede o envio do formulário
+                document.getElementById('mensagem').innerText = 'Por favor, preencha todos os campos obrigatórios!';
+                document.getElementById('mensagem').style.color = 'red';
+                event.preventDefault(); // Impede o envio do formulário
+            } else {
+                // Exibe uma mensagem de sucesso
+                document.getElementById('mensagem').innerText = 'Formulário enviado com sucesso!';
+                document.getElementById('mensagem').style.color = 'green';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Exemplo de evento onsubmit</h1>
+    <form onsubmit="validarFormulario(event)">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <p id="mensagem">Mensagens de validação aparecerão aqui</p>
+</body>
+</html>

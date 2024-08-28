@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    # Passo 1: Inicialização das variáveis
+cidades = []
+cidade_para_morar = ""
+
+# Passo 2: Entrada de dados
+print("Digite o nome de 5 cidades:")
+for i in range(5):
+    cidade = input(f"Digite o nome da cidade {i+1}: ")
+    cidades.append(cidade)
+
+# Passo 3: Seleção da cidade desejada para morar
+print("\nEscolha uma das cidades digitadas como a que você gostaria de morar:")
+for i, cidade in enumerate(cidades):
+    print(f"{i+1}. {cidade}")
+    
+escolha = int(input("Digite o número da cidade escolhida: "))
+cidade_para_morar = cidades[escolha - 1]
+
+# Passo 4: Exibição dos resultados
+print("\nVocê digitou as seguintes cidades:")
+for cidade in cidades:
+    print("- " + cidade)
+print(f"\nVocê gostaria de morar em: {cidade_para_morar}")
+</script>
+<body>
+    
+</body>
+</html>

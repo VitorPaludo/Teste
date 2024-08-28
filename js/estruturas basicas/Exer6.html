@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Pares e ímpares e suas somas</title>
+</head>
+<body>
+<script>
+    let Pares = 0;
+    let Impares = 0;
+    let somaPares = 0;
+    let somaImpares = 0;
+
+     for (let i = 1; i <= 10; i++) {  
+    let numero = parseInt(prompt("Digite o " + i + "º número:"));
+    if (numero % 2 == 0) { 
+        Pares++;
+        somaPares = somaPares + numero;
+        document.write(numero + ' é par<br>');
+        }
+    else { 
+        Impares++;
+        somaImpares = somaImpares + numero;
+        document.write(numero + ' é ímpar<br>');
+         }
+         }
+
+        document.write('<br>');
+        document.write('Números pares:' + Pares + '<br>');
+        document.write('Números ímpares:' + Impares + '<br>');
+        document.write('Soma dos números pares:' + somaPares +'<br>');
+        document.write('Soma dos números ímpares:' + somaImpares);
+</script>
+</body>
+</html>

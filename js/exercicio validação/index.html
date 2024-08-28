@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script language="javascript" src="js/funcoes3.js"></script>
+    <title>Exemplo com tela de login</title>
+</head>
+<body>
+    <div id="container-login">
+        <h1>Login</h1>
+        <form name="form" id="frmContato"  action=""  onSubmit="return autenticacao();">
+
+            <label for="">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="off">
+
+            <label for="">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            <a href="#" id="forgot-password">Esqueceu a senha</a>
+
+            <input type="submit" value="login">
+
+        </form> 
+
+        <div id="social-container">
+            <p>Ou entre pelas suas redes sociais</p>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+        <div id="register-container">
+            <p>Ainda não tem uma conta?</p>
+            <a href="#">Registrar</a>
+        </div>
+        <div id="mensagem"> 
+        </div>
+        <div id="erro"></div>
+     </form>
+    </div>
+    
+</body>
+</html>

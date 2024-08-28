@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de onkeypress</title>
+    <script>
+        // Função a ser chamada quando uma tecla é pressionada
+        function mostrarTeclaPressionada(event) {
+            // Obtém a tecla pressionada
+            const tecla = event.key;
+            // Exibe a tecla pressionada em um alert
+            alert('Tecla pressionada: ' + tecla);
+        }
+    </script>
+</head>
+<body>
+    <h1>Exemplo de evento onkeypress</h1>
+    <input type="text" onkeypress="mostrarTeclaPressionada(event)" placeholder="Pressione uma tecla aqui">
+</body>
+</html>

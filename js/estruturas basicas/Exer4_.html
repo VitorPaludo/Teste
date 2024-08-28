@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informar o nome, ano de nascimento e ano atual</title>
+</head>
+<body>
+
+<script>
+    
+    var nome = prompt("Digite seu nome:");
+    var ano_nas = prompt("Informe o ano de seu nascimento:");
+    var ano_atual = prompt("Informe o ano atual:");
+
+    
+    ano_nas = parseInt(ano_nas);
+    ano_atual = parseInt(ano_atual);
+    
+    if (isNaN(ano_nas) || isNaN(ano_atual)) {
+        document.body.innerHTML = "Por favor, insira valores numéricos válidos.";
+    } 
+    else {
+        var idade = ano_atual - ano_nas;
+
+        if (idade < 0) {
+            document.body.innerHTML = "Você ainda não nasceu.";
+        } 
+        else if (idade >= 18) {
+            document.body.innerHTML = "Olá, " + nome + "! Você é maior de idade e pode fazer a carteira de motorista.";
+        } 
+        else if (idade >= 16) {
+            document.body.innerHTML = "Olá, " + nome + "! Você já pode votar.";
+        } 
+        else {
+            document.body.innerHTML = "Olá, " + nome + "! Você é menor de idade.";
+        }
+    }
+</script>
+
+</body>
+</html>

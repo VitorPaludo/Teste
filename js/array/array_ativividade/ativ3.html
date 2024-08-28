@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+</body>
+<script>
+    primeiro =  new Array (); 
+    segundo = new Array ();
+    resultado = new Array ();
+    for (x = 0; x < 10; x++) {
+        primeiro[x] = window.parseInt(prompt("Digite o " + (x + 1) + "º número (1º ARRAY): "));
+        document.write(primeiro[x], " | ");
+    }
+
+    document.write("<br><br>");
+
+    for (x = 0; x < 10; x++) {
+        segundo[x] = window.parseInt(prompt("Digite o " + (x + 1) + "º número (2º ARRAY): "));
+        document.write(segundo[x], " | ");
+    }
+
+    document.write("<br><br>");
+    document.write("ARRAY RESULTANTE<br>");
+
+    for (x = 0; x < 10; x++) {
+    resultado[x] = primeiro[x] + segundo[x];
+    document.write(resultado[x], " | ");
+    }
+</script>
+
+    
+
+</html>

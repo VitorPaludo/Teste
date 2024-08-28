@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+     let numero = new Array (10);
+     let Pares = 0;
+     let Impares = 0;
+     let somaPares = 0;
+     let somaImpares = 0;
+
+     for (i = 1; i <= 10; i++) {  
+     numero = window.parseInt(prompt("Digite o " + i + "º número:"));
+    if (numero % 2 == 0) { 
+        Pares = Pares + 1;
+        somaPares = somaPares + numero; 
+        document.write(numero + ' é par<br>');
+        }
+    else { 
+        Impares = Impares + 1;
+        somaImpares = somaImpares + numero;
+        document.write(numero + ' é ímpar<br>');
+         }
+         }
+
+        document.write('<br>');
+        document.write('Números pares:' + Pares + '<br>');
+        document.write('Números ímpares:' + Impares + '<br>');
+        document.write('Soma dos números pares:' + somaPares +'<br>');
+        document.write('Soma dos números ímpares:' + somaImpares);
+</script>
+<body>
+    
+</body>
+</html>

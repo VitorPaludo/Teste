@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Números</title>
+</head>
+<body>
+
+<script>
+    numeros = new Array(10);
+    var soma = 0; 
+
+    for (x = 0; x < 10; x++) {
+        numeros[x] = window.parseInt(prompt("Digite o " + (x + 1) + "º número: "));
+        soma = soma +  Number (numeros[x]); 
+    }
+
+    document.write('<h1>Listagem de números</h1>');
+
+    for (x = 0; x < 10; x++) {
+        document.write(numeros[x], '<br>');
+    }
+    document.write("A soma de todos os números é: ", soma);
+
+</script>
+
+</body>
+</html>
